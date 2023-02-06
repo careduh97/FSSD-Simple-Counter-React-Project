@@ -37,5 +37,7 @@ export function resumeCounter () {
 }
 
 export function restartCounter () {
-    window.location.reload();
+    counter = 0;
+    clearInterval(timer);
+    homeApp();
 }
